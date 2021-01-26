@@ -35,12 +35,12 @@ function removeOpenedClass(x){
 
 var mediaQueryList = window.matchMedia(("max-width: 700px"));
 
-function screenTest(e){
-    if(e.matches) {
-        alert("More than 700px")
-    }else{
-        alert("More than 700px")
+function screenTest(e) {
+    if (e.matches) {
+        console.log("We are good")
+    }else {
+        console.log("Greater than 700px")
     }
 }
 
-mediaQueryList.addEventListener("change",screenTest);
+mediaQueryList.addEventListener("change", screenTest)

@@ -114,6 +114,14 @@ body{
     .navbar-toggle{
         display: none;
     }
+    #navbar.opened .navbar-menu{
+        position: relative;
+        top: -11px;
+        left: 0;
+        height: 10px;
+        width: 52vw;
+        right: 35px;
+    }
     .navbar-menu{
         display: flex;
         width: 52vw;
