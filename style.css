@@ -104,7 +104,7 @@ body{
     display: flex;
     position: absolute;
     top: -20px;
-    left: -20px;
+    left: -50px;
     width: 100vw;
     height: 100vh;
     background: #181719;
@@ -143,4 +143,24 @@ body{
     .navbar-menu{
         right: 150px;
     }
+}
+
+.wrapper{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    row-gap: 4ch;
+    column-gap: 1ch;
+    background: #ffff;
+    padding: 2em 2em;
+    height: 500px;
+}
+.value-proposition{
+    background: chocolate;
+    height: 200px;
+}
+
+.hero{
+    background-color: wheat;
+    height: 200px;
 }
