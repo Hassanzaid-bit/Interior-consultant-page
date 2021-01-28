@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;1,200;1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500;1,700&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -8,6 +8,7 @@ body{
     background: #181719;
     margin: 0;
     padding: 0;
+    height: 1080px;
 }
 #navbar{
     width: 100%;
@@ -18,6 +19,7 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 40px 40px;
+    margin-top: 20px;
     position: relative;
 }
 .logo{
@@ -35,7 +37,7 @@ body{
     color: #ffff; 
     text-transform: uppercase;
     position: relative;
-    left: 25px;
+    left: 35px;
 }
 .navbar-toggle{
     cursor: pointer;
@@ -48,7 +50,7 @@ body{
     justify-content: center;
     flex-direction: column;
     position: relative;
-    right: 25px;
+    right: -10px;
     z-index: 5;
 }
 .icon-bar{
@@ -141,26 +143,113 @@ body{
 
 @media screen and (min-width: 1199px){
     .navbar-menu{
-        right: 150px;
+        right: -36px;
     }
 }
 
 .wrapper{
     display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: flex-start;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     row-gap: 4ch;
     column-gap: 1ch;
-    background: #ffff;
-    padding: 2em 2em;
+    padding: 4em 2em;
     height: 500px;
 }
 .value-proposition{
-    background: chocolate;
-    height: 200px;
+    position: relative;
+    left: 3em;
+    height: 345px;
+}
+.value-proposition h1{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 61px;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+.value-proposition article{
+    width: 50ch;
+}
+.value-proposition article p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.value-proposition article a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 5px;
+}
+.value-proposition article.fa-arrow{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .hero{
-    background-color: wheat;
-    height: 200px;
+    background: url("/photo1.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    left: -7em;
+    height: 530px;
+    width: 700px;
+}
+.card{
+    background: #181719;
+    color: white;
+    width: 57%;
+    height: 42%;
+    position: absolute;
+    padding: 1em;
+    bottom: -81px;
+    right: 3em;
+    z-index: 50;
+}
+.card img{
+    width: 65px;
+    border-radius: 50%;
+    position: relative;
+    left: 12px;
+}
+.card p{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+    position: relative;
+    top: 20px;
+    left: 6px;
+    width: 18ch;
+    
+}
+.details{
+    width: max-content;
+    display: inline-block;
+    position: relative;
+    left: 12px;
+    top: -21px;
+}
+.details .name{
+    margin-bottom: 12px;
+    
+}
+.details .occupation{
+    position: relative;
+    left: 7px;
+    top: 10px;
 }
